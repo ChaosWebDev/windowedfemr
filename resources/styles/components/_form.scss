@@ -1,0 +1,61 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    width: fit-content;
+
+    div.column {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 0.25rem;
+        }
+
+        .mt {
+            margin-top: 0.75rem;
+        }
+
+        .mb {
+            margin-bottom: 0.75rem;
+        }
+
+        h2,
+        h3,
+        h4 {
+            color: var(--cwd-important, goldenrod);
+            text-align: center;
+        }
+
+        .required {
+            color: cyan;
+            font-weight: bold;
+        }
+    }
+
+    label,
+    input,
+    button,
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 300px;
+        padding: 5px 10px !important;
+    }
+
+    input[type=submit] {
+        padding: 5px 10px !important;
+        width: fit-content;
+        align-self: center;
+    }
+
+    textarea {
+        aspect-ratio: 3/1;
+    }
+}
